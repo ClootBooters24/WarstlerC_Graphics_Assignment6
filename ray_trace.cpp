@@ -241,8 +241,7 @@ void ray_trace()
                   shader3.SetObject(color[closest], 0.4, 0.0, 0.0, 1);
                   shader4.SetObject(color[closest], 0.4, 0.0, 0.0, 1);
                   shader5.SetObject(color[closest], 0.4, 0.0, 0.0, 1);
-               }
-               else {
+               } else {
                   shader.SetObject(color[closest], 0.4, 0.4, 0.4, 10);
                   shader2.SetObject(color[closest], 0.4, 0.4, 0.4, 10);
                   shader3.SetObject(color[closest], 0.4, 0.4, 0.4, 10);
@@ -261,9 +260,7 @@ void ray_trace()
                shader4.GetShade(closest_p, closest_n, pixel4);
                ColorRGB pixel5;
                shader5.GetShade(closest_p, closest_n, pixel5);
-               image[y][x][0] = (pixel.R + pixel2.R + pixel3.R + pixel4.R + pixel5.R) / 5;
-               image[y][x][1] = (pixel.G + pixel2.G + pixel3.G + pixel4.G + pixel5.G) / 5;
-               image[y][x][2] = (pixel.B + pixel2.B + pixel3.B + pixel4.B + pixel5.B) / 5;
+
             }
          }
       }
