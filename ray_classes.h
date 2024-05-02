@@ -95,20 +95,6 @@ class Sphere3D
 };
 
 //----------------------------------------------
-class Cube3D
-{
-   public:
-      Point3D center;
-      Vector3D motion;
-      float size;
-
-      void set(Point3D p, float s) ;
-      void set(Point3D p, Vector3D m, float s) ;
-      string print() ;
-      bool get_intersection(Ray3D ray, Point3D &point, Vector3D &normal);
-};
-
-//----------------------------------------------
 class Phong
 {
  public:
